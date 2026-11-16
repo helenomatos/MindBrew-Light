@@ -53,7 +53,7 @@ const Contact = () => {
           <Button
             size="lg"
             className="rounded-full bg-primary px-10 py-6 text-lg text-primary-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary-light hover:shadow-xl"
-            onClick={() => window.open('https://maps.app.goo.gl/9QeLyvRYdovgALvP7', '_blank')}
+            onClick={() => window.open('https://maps.app.goo.gl/9QeLyvRYdovgALvP7', '_blank', 'noopener,noreferrer')}
           >
             Get Directions
           </Button>

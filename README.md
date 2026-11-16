@@ -1,44 +1,44 @@
-﻿# MindBrew Light - Landing Page
+# MindBrew Light — landing page
 
-MindBrew Light is a marketing site for the Dublin light therapy cafe. The codebase is built with React, TypeScript, Tailwind CSS, and shadcn/ui on top of Vite.
+Landing page for MindBrew Light, a concept for a light-therapy café in Dublin. It's a single page that introduces the idea, the experience, the menu and the sustainability angle, and ends with contact details and a map link.
 
-## Tech Stack
+**Live:** https://mind-brew-light.vercel.app
 
-- React 18 with TypeScript
-- Vite for the development/build pipeline
-- Tailwind CSS with shadcn/ui component primitives
-- ESLint + Prettier for linting and formatting
+## Sections
 
-## Getting Started
+Hero · About · Experience · Menu · Sustainability · Contact
+
+## Tech stack
+
+React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui (Radix UI) · Vercel
+
+## Getting started
+
+Requires Node.js 18 or newer.
 
 ```bash
 npm install
-npm run dev
+npm run dev       # http://localhost:8080
 ```
 
-The development server runs at `http://localhost:5173`. Hot reloading is enabled by default.
+| Script              | What it does                        |
+| ------------------- | ----------------------------------- |
+| `npm run dev`       | Dev server with hot reload          |
+| `npm run build`     | Production build into `dist/`       |
+| `npm run preview`   | Serves the production build locally |
+| `npm run lint`      | Runs ESLint                         |
+| `npm run format`    | Formats the code with Prettier      |
+| `npm run typecheck` | Type-checks without emitting        |
 
-## Available Commands
+## Project structure
 
-- `npm run dev` - start the Vite development server
-- `npm run build` - type-check via project references and emit an optimized production build
-- `npm run preview` - preview the production build locally
-- `npm run lint` - run ESLint on the project sources
-- `npm run format` - apply Prettier formatting
-- `npm run typecheck` - perform a no-emit TypeScript type check
+```
+src/
+├── components/   # one component per section, plus ui/ primitives
+├── pages/        # Index and NotFound
+└── assets/       # images
+```
 
-## Project Structure
+---
 
-- `src/` - application source code
-  - `components/` - marketing page sections and UI primitives
-  - `pages/` - routed views
-  - `lib/` - shared utilities
-- `public/` - static assets served as-is
-
-## Styling
-
-Tailwind CSS powers styling via utility classes. The design tokens live in `src/index.css`, while reusable UI primitives reside in `src/components/ui`. Use the `cn` helper from `src/lib/utils.ts` to combine class names safely.
-
-## Deployment
-
-Run `npm run build` to generate the production assets under `dist/`. Deploy the contents of the `dist/` directory to your preferred hosting provider.
+Built by [Heleno Matos](https://portfolio.helenomatos.com).
